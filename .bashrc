@@ -1,5 +1,4 @@
-```
-alias des='cd ~/Desktop;clear'
+```alias des='cd ~/Desktop;clear'
 alias cls='clear'
 alias dow='cd ~/Downloads;clear'
 alias doc='cd ~/Documents;clear'
@@ -19,6 +18,4 @@ function cheat {
 	pc curl -s cheat.sh/"$1"
 }
 
-export PS1='\[\033[01;31m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-
-```
+export PS1='\[\033[01;31m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '```
