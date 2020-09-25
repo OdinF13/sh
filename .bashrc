@@ -12,6 +12,8 @@ alias gitstat='git status'
 alias gitlog='git log master'
 alias gitdel='git reset --hard'
 alias pc='proxychains'
+alias bpcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 function cheat {
 	pc curl -s cheat.sh/"$1"
