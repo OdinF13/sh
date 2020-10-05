@@ -1,0 +1,5 @@
+# Use UTF-8
+e scr.utf8=true
+
+# Color scheme
+e scr.color=1
