@@ -18,4 +18,11 @@ function cheat {
 	pc curl -s cheat.sh/"$1"
 }
 
+function hgrep {
+	grep -r "$@" $HISTFILE
+	history \
+		| grep "$@" \
+		| grep -v 'hgrep'
+}
+
 export PS1='\[\033[01;31m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
