@@ -22,7 +22,7 @@ function hgrep {
 	grep -r "$@" $HISTFILE
 	history \
 		| grep "$@" \
-		| grep -v 'hgrep'
+		| grep -v ${FUNCNAME[0]}
 }
 
 export PS1='\[\033[01;31m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
