@@ -9,7 +9,7 @@ fi
 echo "Installing \"resolvconf\""
 apt install resolvconf -y
 
-echo "Enbaling service"
+echo "Enabling service"
 systemctl enable resolvconf.service
 systemctl start resolvconf.service
 
