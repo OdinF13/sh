@@ -13,12 +13,7 @@ function random_range {
 	fi
 	
 	local diff=$((end-start))
-	local r=$[RANDOM % diff + 1]
-	for i in $(seq $r $diff); do
-		[ $i -eq $r ] && break
-	done
-	
-	echo $((i+start))
+	echo $(( $RANDOM % diff + start))
 }
 
 random_range 5 20
