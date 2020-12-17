@@ -1,4 +1,4 @@
-function rand_range {
+function random_range {
 	if [ $# -ne 2 ]; then
 		echo "Need exactly 2 arguments instead of $#" >&2
 		return 1
